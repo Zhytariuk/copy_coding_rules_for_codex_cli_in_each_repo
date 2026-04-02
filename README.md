@@ -38,3 +38,22 @@ powershell -ExecutionPolicy Bypass -File .\scripts\install-rules-into-repo.ps1 -
 ```
 
 This copies the baseline files into another repository without deleting anything.
+## Library architecture
+
+This repository is being organized as a rules library, not just a loose file dump.
+
+Main areas:
+
+- `roadmap/` strategy and sequencing
+- `catalog/` rule index and taxonomy
+- `profiles/` curated subsets of rules for different repository types
+- `rules/` individual rule documents by domain
+- `scripts/` optional automation helpers
+
+Start here when reading the repository:
+
+1. `roadmap/ROADMAP.md`
+2. `roadmap/IMPLEMENTATION_PLAN.md`
+3. `catalog/README.md`
+4. `profiles/`
+5. `rules/`
